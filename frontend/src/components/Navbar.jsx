@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg main-navbar">
             <Link to="/" className="navbar-brand sidebar-gone-hide">
-                Stisla
+                REACT VITE
             </Link>
             <div className="navbar-nav">
                 <a
@@ -27,7 +27,7 @@ export default function Navbar() {
                         className="nav-link dropdown-toggle nav-link-lg nav-link-user"
                     >
                         <div className="d-sm-none d-lg-inline-block">
-                            Hi, Ujang Maman
+                            Hi, Fahmi Ibrahim
                         </div>
                     </a>
                     <div className="dropdown-menu dropdown-menu-right">

@@ -1,20 +1,25 @@
 import React from "react";
 import Case from "../components/Case";
+import { useEffect } from "react";
 
-export default function Home() {
+export default function GeneralFeature() {
+    useEffect(() => {
+        document.title = "General Feature";
+    }, []);
+
     return (
         <Case>
-            <div className="section-header px-4 tw-rounded-none tw-shadow-md tw-shadow-gray-300 lg:tw-rounded-lg">
-                <h1 className="mb-1 tw-text-lg">Home</h1>
+            <div className="section-header px-4 tw-rounded-none tw-shadow-md tw-shadow-gray-200 lg:tw-rounded-lg">
+                <h1 className="mb-1 tw-text-lg">General Feature</h1>
             </div>
 
             <div className="section-body">
                 <div className="card">
                     <div className="card-body px-0">
-                        <h3>Tabel home</h3>
+                        <h3>Tabel General Feature</h3>
                         <div className="show-entries">
                             <p className="show-entries-show">Show</p>
-                            <select id="length-data">
+                            <select id="length-data" className="tw-p-1">
                                 <option value="1">1</option>
                                 <option value="5">5</option>
                                 <option value="10">10</option>
@@ -30,6 +35,7 @@ export default function Home() {
                                 type="search"
                                 id="search-data"
                                 placeholder="Search here..."
+                                className="form-control"
                             />
                         </div>
                         <div className="table-responsive tw-max-h-96">
@@ -39,7 +45,7 @@ export default function Home() {
                                         <th width="15%" className="text-center">
                                             No
                                         </th>
-                                        <th>Nama Kategori</th>
+                                        <th>Name General</th>
                                         <th className="text-center">
                                             <i className="fas fa-cog"></i>
                                         </th>
@@ -48,10 +54,12 @@ export default function Home() {
                                 <tbody>
                                     <tr className="text-center">
                                         <td>1</td>
-                                        <td className="text-left">TEST</td>
+                                        <td className="text-left">
+                                            Air Document Intelligence
+                                        </td>
                                         <td>
                                             <button
-                                                className="btn mr-2 btn-warning"
+                                                className="btn btn-warning mr-2"
                                                 data-toggle="modal"
                                                 data-target="#ubahDataModal"
                                             >

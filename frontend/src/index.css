@@ -17,12 +17,28 @@
 }
 
 @layer utilities {
+    body {
+        @apply tw-tracking-wider;
+    }
+
+    .section-header > h1 {
+        @apply tw-tracking-wider;
+    }
+
     table {
         @apply tw-w-full tw-table-fixed;
     }
 
+    table > thead > tr {
+        @apply tw-text-xs tw-uppercase tw-tracking-widest;
+    }
+
+    table > tbody > tr {
+        @apply tw-text-gray-700;
+    }
+
     table > thead > tr > th {
-        @apply tw-bg-gray-100 tw-p-4;
+        @apply tw-bg-gray-100 tw-p-4 tw-text-gray-600;
     }
 
     table > tbody > tr > td {
@@ -62,7 +78,7 @@
     }
 
     .card {
-        @apply tw-rounded-none tw-shadow-md tw-shadow-gray-300 lg:tw-rounded-lg;
+        @apply tw-rounded-none tw-shadow-md tw-shadow-gray-200 lg:tw-rounded-lg;
     }
 
     .section-body {

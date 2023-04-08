@@ -13,30 +13,51 @@ export default function Sidebar() {
                             location.pathname === "/" ? "active" : ""
                         }`}
                     >
-                        <NavLink href="/" className="nav-link">
+                        <NavLink href="/">
                             <i className="far fa-home"></i>
-                            <span>Home</span>
+                            <span>Dashboard</span>
                         </NavLink>
                     </li>
                     <li
-                        className={`nav-item ${
-                            location.pathname === "/about" ? "active" : ""
+                        className={`nav-item dropdown ${
+                            location.pathname === "/general-feature" ||
+                            location.pathname === "/advanced-feature"
+                                ? "active"
+                                : ""
                         }`}
                     >
-                        <NavLink href="/about" className="nav-link">
-                            <i className="far fa-exclamation"></i>
-                            <span>About</span>
-                        </NavLink>
-                    </li>
-                    <li
-                        className={`nav-item ${
-                            location.pathname === "/contact" ? "active" : ""
-                        }`}
-                    >
-                        <NavLink href="/contact" className="nav-link">
-                            <i className="far fa-phone"></i>
-                            <span>Contact</span>
-                        </NavLink>
+                        <a
+                            href="#"
+                            data-toggle="dropdown"
+                            className="nav-link has-dropdown"
+                        >
+                            <i className="fas fa-fire"></i>
+                            <span>Module 1</span>
+                        </a>
+                        <ul className="dropdown-menu">
+                            <li
+                                className={`nav-item ${
+                                    location.pathname === "/general-feature"
+                                        ? "active"
+                                        : ""
+                                }`}
+                            >
+                                <NavLink href="/general-feature">
+                                    General Feature
+                                </NavLink>
+                            </li>
+                            <li
+                                className={`nav-item ${
+                                    location.pathname === "/advanced-feature"
+                                        ? "active"
+                                        : ""
+                                }`}
+                            >
+                                <NavLink href="/advanced-feature">
+                                    Advanced Feature
+                                </NavLink>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
