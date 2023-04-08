@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/129714988/230703268-cbc6a3a4-1602-4963-acea-f7c083406e0c.png)
+![image](https://user-images.githubusercontent.com/129714988/230708170-a6416a24-777d-4bcf-8374-ca9978fc4a74.png)
 
 # React Vite Template Admin Stisla
 
